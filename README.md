@@ -11,6 +11,7 @@ Backend
 В app/Http има два контролера:
 UserController: Управлява функционалността за регистрация, влизане в системата (login) и актуализация на данни.
 QrCodeController: Генерира QR код.
+
 Frontend
 Използване на Context и Redux:
 
