@@ -1,0 +1,54 @@
+.c {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f {
+  flex-direction: column;
+}
+.spa {
+  justify-content: space-between;
+}
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+.transition {
+  transition: .6s;
+}
+.transformRight {
+  transform: translateX(100%);
+}
+.transformLeft {
+  transform: translateX(-100%);
+}
+.transformLeft50 {
+  transform: translateX(-50%);
+}
+.transformTop {
+  transform: translateY(-50%);
+}
+.transformBottom {
+  transform: translateY(100%);
+}
+.delay2 {
+  transition-delay: .2s;
+}
+.delay4 {
+  transition-delay: .4s;
+}
+.delay6 {
+  transition-delay: .6s;
+}
+.delay8 {
+  transition-delay: .8s;
+}
+.delay10 {
+  transition-delay: 1s;
+}
+.delay12 {
+  transition-delay: 1.2s;
+}

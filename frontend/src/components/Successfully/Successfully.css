@@ -1,0 +1,28 @@
+.Successfully h3 {
+    color: var(--white1);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+.Successfully .img {
+    width: 80%;
+}
+.Successfully .img img {
+    filter: drop-shadow(2px 4px 4px rgba(0,0,0,.3));
+}
+.Successfully p {
+    text-align: center;
+    margin: .5rem;
+    color: var(--light4);
+    font-family: var(--font2);
+}
+.Successfully button {
+    border-radius: .5rem;
+    background: var(--white5);
+    color: var(--dark1);
+    opacity: .7;
+}
+.Successfully button:hover {
+    opacity: 1;
+}

@@ -1,0 +1,284 @@
+.RequestsPage {
+    padding: 4% .5rem;
+}
+.RequestsPage .container {
+    max-width: 1600px;
+}
+.RequestsPage .container .header {
+    padding: 0 .5rem;
+    margin-bottom: 2rem;
+}
+.RequestsPage .container .btn {
+    justify-content: flex-start;
+    margin: .5rem 0;
+}
+.RequestsPage .container .btn button {
+    border-radius: 4px;
+    padding: 0 .5rem;
+    font-size: 1rem;
+    margin-right: .5rem;
+    opacity: .7;
+    background: var(--white5);
+}
+.RequestsPage .container .btn button:hover {
+    opacity: 1;
+}
+.RequestsPage .container .header .search {
+    width: unset;
+}
+.RequestsPage .container .header h3 {
+    color: var(--middle1);
+    font-size: 2rem;
+}
+.RequestsPage .container .header p {
+    color: var(--white1);
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--light4);
+}
+.RequestsPage .container .header .search .input {
+    position: relative;
+    width: unset;
+    margin-left: 1rem;
+}
+.RequestsPage .container .header .search .input input {
+    border: 2px solid var(--middle1);
+    color: var(--white1);
+    font-size: 20px;
+    border-radius: .5rem;
+    padding: 4px .5rem;
+}
+.RequestsPage .container .header .search .input input:focus {
+    border-color: var(--light2);
+}
+.RequestsPage .container .header .search .input label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 1rem;
+    font-size: 20px;
+    color: var(--white1);
+    font-family: var(--font3);
+}
+.RequestsPage .container .header .search .input label #icon {
+    margin-right: .5rem;
+}
+.RequestsPage .container .header .search .input input:focus + label,
+.RequestsPage .container .header .search .input input:not(:placeholder-shown) + label {
+    display: none;
+}
+
+.RequestsPage .container .columns {
+    border: 2px solid var(--dark4);
+    align-items: flex-start;
+}
+.RequestsPage .container .columns strong {
+    flex: 1;
+    max-height: 2rem;
+    overflow: auto;
+    text-align: center;
+    text-decoration: underline dashed;
+    font-family: var(--font4);
+    color: var(--middle1);
+    padding: .5rem 0;
+    border-right: 2px solid var(--dark4);
+    cursor: pointer;
+}
+.RequestsPage .container .columns strong::-webkit-scrollbar {
+    display: none;
+}
+.RequestsPage .container .columns strong .icon {
+    color: #ffa500;
+    opacity: 0;
+}
+.RequestsPage .container .columns strong .icon.rotateTop {
+    opacity: 1;
+}
+.RequestsPage .container .columns strong .icon.rotateBottom {
+    opacity: 1;
+    transform: rotate(180deg);
+}
+.RequestsPage .container .data {
+    border: 2px solid var(--dark4);
+    align-items: flex-start;
+}
+.RequestsPage .container .data .info {
+    flex: 1;
+    height: 100px;
+    max-height: 2rem;
+    padding: 0 4px;
+    overflow: auto;
+    border-right: 2px solid var(--dark4);
+    color: var(--white1);
+}
+.RequestsPage .container .data .info.border {
+    border-right: unset;
+    border: 1px solid var(--white5);
+}
+.RequestsPage .container .data .info.start {
+    justify-content: flex-start;
+}
+.RequestsPage .container .data .info::-webkit-scrollbar {
+    display: none;
+}
+.RequestsPage .container .data .info p {
+    font-family: var(--font2);
+}
+.RequestsPage .container .data .info strong {
+    font-family: var(--font3);
+    color: var(--light4);
+    cursor: pointer;
+}
+.RequestsPage .container .data .info span {
+    color: var(--light3);
+}
+.RequestsPage .container .data .info input {
+    flex: 1;
+    color: var(--white1);
+    font-family: var(--font2);
+    margin-right: 4px;
+}
+.RequestsPage .container .data .info input::placeholder {
+    font-family: var(--font4);
+}
+
+
+.RequestsPage .container .columns strong:nth-child(1),
+.RequestsPage .container .data .info:nth-child(1) {
+    max-width: 5%;
+}
+.RequestsPage .container .columns strong:nth-child(2),
+.RequestsPage .container .data .info:nth-child(2) {
+    max-width: 15%;
+}
+.RequestsPage .container .columns strong:nth-child(3),
+.RequestsPage .container .data .info:nth-child(3) {
+    max-width: 20%;
+}
+.RequestsPage .container .columns strong:nth-child(4),
+.RequestsPage .container .data .info:nth-child(4) {
+    max-width: 15%;
+}
+.updateIcon {
+    cursor: pointer;
+    transition: .4s;
+    color: var(--white1);
+}
+.updateIcon:hover {
+    transform: rotate(-60deg);
+}
+.updateIcon.animation {
+    display: none;
+}
+
+
+
+
+
+
+.users {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: none !important;
+}
+.users span {
+    font-size: 20px;
+    font-family: var(--font4);
+    color: var(--light4);
+    margin-right: .5rem;
+}
+.users span.color {
+    color: #ffa500;
+    border-bottom: 1px solid #ffa500;
+}
+.users p {
+    color: var(--white1);
+}
+.users .start {
+    justify-content: flex-start;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.users textarea.color {
+    border-color: #ffa500;
+}
+
+
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 960px) {
+    .RequestsPage .container .columns strong:last-child,
+    .RequestsPage .container .info:last-child {
+        display: none;
+    }
+    .RequestsPage .container .columns strong,
+    .RequestsPage .container .data .info {
+        max-width: 40% !important;
+    }
+    .RequestsPage .container .columns strong:nth-child(1),
+    .RequestsPage .container .data .info:nth-child(1) {
+        max-width: 10% !important;
+    }
+    .RequestsPage .container .columns strong:nth-child(4),
+    .RequestsPage .container .data .info:nth-child(4) {
+        max-width: 20% !important;
+    }
+}
+@media (max-width: 760px) {
+    .RequestsPage .container .btn button {
+        width: 100%;
+    }
+    .RequestsPage .container .columns strong,
+    .RequestsPage .container .data .info {
+        display: none;
+    }
+    .users {
+        display: flex !important;
+    }
+}
+@media (max-width: 560px) {
+    .RequestsPage .container .header h3 {
+        font-size: 20px;
+    }
+    .RequestsPage .container .header .search .input input {
+        font-size: 1rem;
+        padding: 2px .5rem;
+    }
+    .RequestsPage .container .header .search .input label {
+        font-size: 1rem;
+    }
+    .RequestsPage .container .header p {
+        display: none;
+    }
+}
+@media (max-width: 380px) {
+    .users span {
+        font-size: 14px;
+    }
+    .RequestsPage .container .header h3 {
+        display: none;
+    }
+    .RequestsPage .container .header .search,
+    .RequestsPage .container .header .search .input {
+        width: 100%;
+    }
+    .RequestsPage .container .header .search .input {
+        margin-left: 4px;
+    }
+    .RequestsPage .container .header .search .input input {
+        width: 100%;
+        font-size: 14px;
+        padding: 2px .5rem;
+    }
+    .RequestsPage .container .header .search .input label {
+        font-size: 14px;
+    }
+}

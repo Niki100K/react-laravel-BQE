@@ -1,0 +1,112 @@
+.Login {
+    margin-top: 4rem;
+    max-width: 480px;
+    border-radius: 2rem;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.Login strong {
+    color: var(--light3);
+}
+.Login h2 {
+    margin-top: 2rem;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-family: var(--font4);
+    color: var(--light2);
+}
+.Login form {
+    padding: 2rem .5rem;
+    max-width: 400px;
+}
+.Login form .input {
+    position: relative;
+    border-radius: 1rem;
+    background: var(--middle1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+.Login form input {
+    width: 100%;
+    padding: .75rem 1rem 1rem;
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    color: var(--white1);
+}
+.Login form input[type=password] {
+    padding-right: 3rem;
+}
+.Login form label {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font4);
+    color: var(--light4);
+    text-transform: capitalize;
+}
+.Login form input:focus {
+    border: 2px solid var(--light2);
+}
+.Login form input:focus + label,
+.Login form input:not(:placeholder-shown) + label {
+    transform:  translateY(-120%);
+    font-size: 14px;
+    font-family: var(--font2);
+}
+.Login form button {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    background: var(--white5);
+    opacity: .7;
+    transition: .4s;
+}
+.Login form button:hover {
+    opacity: 1;
+}
+
+@media (max-width: 520px) {
+    .Login {
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    .Login form {
+        max-width: 100%;
+    }
+    .Login form .input {
+        margin-bottom: 1.5rem;
+    }
+    .Login form input {
+        font-size: 20px;
+        padding: 1.25rem .5rem .5rem;
+    }
+    .Login form label {
+        font-size: 20px;
+        left: .5rem;
+    }
+}
+@media (max-width: 420px) {
+    .Login form .input {
+        margin-bottom: .5rem;
+        border-radius: .5rem;
+    }
+    .Login form input {
+        font-size: 1rem;
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+    .Login form label {
+        font-size: 1rem;
+        left: .5rem;
+    }
+    .Login form input:focus + label,
+    .Login form input:not(:placeholder-shown) + label {
+        transform:  translateY(-110%);
+        font-size: 12px;
+    }
+    .Login form button {
+        border-radius: .5rem;
+        font-size: 1rem;
+        padding: 4px;
+    }
+}

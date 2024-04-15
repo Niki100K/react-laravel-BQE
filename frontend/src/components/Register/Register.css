@@ -1,0 +1,190 @@
+.Register {
+    margin-top: 4rem;
+    max-width: 480px;
+    border-radius: 2rem;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.Register h2 {
+    margin-top: 2rem;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-family: var(--font4);
+    color: var(--light2);
+}
+.Register form {
+    padding: 2rem .5rem;
+    max-width: 400px;
+}
+.Register form .input {
+    position: relative;
+    border-radius: 1rem;
+    background: var(--middle1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+.Register form input {
+    width: 100%;
+    padding: .75rem 1rem 1rem;
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    color: var(--white1);
+}
+.Register form input[type=password] {
+    padding-right: 3rem;
+}
+.Register form label {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font4);
+    color: var(--light4);
+    text-transform: capitalize;
+}
+.Register form input:focus {
+    border: 2px solid var(--light2);
+}
+.Register form input:focus + label,
+.Register form input:not(:placeholder-shown) + label {
+    transform:  translateY(-120%);
+    font-size: 14px;
+    font-family: var(--font2);
+}
+.Register form .input #icon {
+    position: absolute;
+    right: .5rem;
+    font-size: 2rem;
+    color: var(--light2);
+}
+.Register form .input p {
+    position: absolute;
+    left: .5rem;
+    top: 100%;
+    font-size: 14px;
+    color: var(--light3);
+    font-family: var(--font4);
+    animation:alert .4s ease-in-out 0s 1 normal;
+}
+.Register form .terms {
+    justify-content: flex-end;
+}
+.Register form .terms a {
+    color: var(--white5);
+    font-family: var(--font2);
+    text-decoration: unset;
+}
+.Register form .terms a:hover {
+    text-decoration: underline;
+}
+.Register form .terms input {
+    width: 2rem;
+}
+.Register form .type {
+    margin-top: .5rem;
+}
+.Register form .type button {
+    border-radius: .5rem;
+    font-size: 1rem;
+    background: var(--light2);
+    opacity: .7;
+}
+.Register form .type button:hover {
+    opacity: 1;
+}
+
+.Register form strong {
+    color: var(--light3);
+    font-family: var(--font4);
+    text-align: center;
+    margin-top: .5rem;
+    text-decoration: underline;
+}
+.containerClass {
+  padding: .75rem 1rem 1rem;
+}
+.inputClass {
+  width: 100% !important;
+  background: transparent !important;
+  border: unset !important;
+  font-size: 1.5rem !important;
+}
+.dropdownClass {
+  display: none;
+}
+.searchClass {
+  display: none;
+}
+.buttonClass {
+    cursor: default !important;
+    background: transparent !important;
+    border: unset !important;
+  }
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus {
+  background-color: transparent !important;
+}
+.react-tel-input .selected-flag .arrow {
+  display: none;
+}
+.react-tel-input .flag {
+  transform: scale(1.5);
+}
+
+@keyframes alert {
+    0%{ -ms-transform: translateX(0); transform: translateX(0); }
+    25%{ -ms-transform: translateX(-5px); transform: translateX(-5px); }
+    50%{ -ms-transform: translateX(5px); transform: translateX(5px); }
+    75%{ -ms-transform: translateX(-5px); transform: translateX(-5px); }
+    100%{ -ms-transform: translateX(0); transform: translateX(0); }
+}
+@media (max-width: 520px) {
+    .Register form {
+        max-width: 100%;
+    }
+    .Register form .input {
+        margin-bottom: 1.5rem;
+    }
+    .Register form input {
+        font-size: 20px;
+        padding: 1.25rem .5rem .5rem;
+    }
+    .Register form label {
+        font-size: 20px;
+        left: .5rem;
+    }
+    .inputClass {
+        font-size: 20px !important;
+      }
+}
+@media (max-width: 420px) {
+    .Register form {
+        max-width: 100%;
+    }
+    .Register form .input {
+        margin-bottom: .5rem;
+    }
+    .Register form input {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .Register form label {
+        font-size: 1rem;
+        left: .5rem;
+    }
+    .Register form input:focus + label,
+    .Register form input:not(:placeholder-shown) + label {
+        transform:  translateY(-110%);
+        font-size: 12px;
+    }
+    .containerClass {
+        padding: .5rem;
+    }
+    .inputClass {
+        font-size: 1rem !important;
+    }
+    .Register form .input #icon {
+        font-size: 1.5rem;
+    }
+    .Register form .terms a {
+        font-size: 12px;
+    }
+}
